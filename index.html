@@ -147,6 +147,7 @@
       border: 1px solid;
     }
     .status-live   { color: var(--green); border-color: var(--green); background: #0a1f0a; }
+    .status-wip    { color: var(--amber); border-color: var(--amber); background: #1a1200; }
     .status-soon   { color: var(--muted); border-color: var(--border); }
 
     .card-desc {
@@ -340,11 +341,11 @@
         </div>
       </div>
 
-      <!-- project 2 — coming soon -->
-      <div class="card soon">
+      <!-- project 2 — in progress -->
+      <div class="card">
         <div class="card-top">
           <span class="card-title">Statistical Arbitrage — Pairs Trading</span>
-          <span class="card-status status-soon">coming soon</span>
+          <span class="card-status status-wip">in progress</span>
         </div>
         <p class="card-desc">
           Cointegration-based pairs trading strategy on equity data.
@@ -359,11 +360,11 @@
         </div>
       </div>
 
-      <!-- project 3 — in progress -->
-      <div class="card">
+      <!-- project 3 — live -->
+      <div class="card featured">
         <div class="card-top">
           <span class="card-title">Equity Options: Pricing &amp; Vol Calibration</span>
-          <span class="card-status status-soon">in progress</span>
+          <span class="card-status status-live">live</span>
         </div>
         <p class="card-desc">
           Reusable Monte Carlo pricing engine with modular path simulation (GBM, antithetic variates,
