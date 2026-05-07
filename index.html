@@ -342,20 +342,36 @@
       </div>
 
       <!-- project 2 — in progress -->
-      <div class="card">
+      <div class="card featured">
         <div class="card-top">
           <span class="card-title">Statistical Arbitrage — Pairs Trading</span>
           <span class="card-status status-wip">in progress</span>
         </div>
         <p class="card-desc">
-          Cointegration-based pairs trading strategy on equity data.
-          Engle-Granger test, z-score signals, full backtest with transaction costs,
-          rolling window recalibration. Sharpe ratio, drawdown, and equity curve analysis.
+          Cointegration-based stat-arb framework built from scratch.
+          Ornstein-Uhlenbeck spread modelling with AR(1) parameter estimation.
+          Three hedge ratio methods compared: OLS, TLS (orthogonal regression),
+          and a Kalman filter for dynamic β tracking.
+          Rolling walk-forward backtest with per-window stationarity filters (ADF, half-life, κ &gt; 0).
+          Pair screener across 12 sectors using Engle-Granger, Hurst exponent, and ADF.
         </p>
+
+        <div class="result-block">
+          <div class="result-label">GLD/GDX — walk-forward out-of-sample</div>
+          <div class="result-row"><span>OLS Sharpe</span><span class="val">2.08</span></div>
+          <div class="result-row"><span>TLS Sharpe</span><span class="val">2.31</span></div>
+          <div class="result-row"><span>Kalman Sharpe</span><span class="val amber">3.88</span></div>
+          <div class="result-row"><span>Max drawdown (Kalman)</span><span class="val">−0.032</span></div>
+        </div>
+
         <div class="card-tags">
           <span class="tag">cointegration</span>
-          <span class="tag">backtesting</span>
+          <span class="tag">OU process</span>
+          <span class="tag">Kalman filter</span>
+          <span class="tag">TLS</span>
+          <span class="tag">walk-forward</span>
           <span class="tag">time series</span>
+          <span class="tag">statsmodels</span>
           <span class="tag">pandas</span>
         </div>
 
@@ -434,41 +450,7 @@
   </div>
 </section>
 
-<!-- stack -->
-<section id="stack">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-label">stack</span>
-      <div class="section-line"></div>
-    </div>
-    <div class="stack-grid">
-      <div class="stack-item">
-        <div class="stack-cat">languages</div>
-        <div class="stack-val">Python, C++ (basics)</div>
-      </div>
-      <div class="stack-item">
-        <div class="stack-cat">quant</div>
-        <div class="stack-val">numpy, scipy, pandas</div>
-      </div>
-      <div class="stack-item">
-        <div class="stack-cat">ML / deep learning</div>
-        <div class="stack-val">PyTorch, scikit-learn</div>
-      </div>
-      <div class="stack-item">
-        <div class="stack-cat">math</div>
-        <div class="stack-val">stochastic calculus, measure theory, optimization</div>
-      </div>
-      <div class="stack-item">
-        <div class="stack-cat">testing</div>
-        <div class="stack-val">pytest</div>
-      </div>
-      <div class="stack-item">
-        <div class="stack-cat">tools</div>
-        <div class="stack-val">git, jupyter, LaTeX</div>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <!-- footer -->
 <div class="container">
@@ -478,7 +460,7 @@
       <a href="https://linkedin.com/in/hajar-lamtaai-909073211/" target="_blank">linkedin</a>
       <a href="mailto:hajarlamtaai25@gmail.com">email</a>
     </div>
-    <span class="footer-copy">Hajar Lamtaai · 2025</span>
+    <span class="footer-copy">Hajar Lamtaai · 2026</span>
   </footer>
 </div>
 
